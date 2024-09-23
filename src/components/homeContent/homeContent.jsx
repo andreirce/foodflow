@@ -5,8 +5,8 @@ import "./homeContent.css"
 export function HomeContent(){
 
     return (
-        <section id="home">
-            <div id="background"></div>
+        <section className="home">
+            <div className="background"></div>
             <div className="cta">
                 <h1 className="title">
                     As doações salvam <span>vidas</span>
