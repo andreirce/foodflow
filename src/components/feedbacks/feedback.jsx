@@ -7,21 +7,29 @@ export function Feedbacks() {
     const baseUrl = "http://localhost:4000"
 
     const [dataUser, setUser] = useState([]);
+    const [dataOpinions, setOpinion] = useState([]);
 
-    async function getData() {
+    async function getDataUser() {
         const { data } = await axios.get("http://localhost:4000/user");
         console.log(data);
         setUser(data.users);
     }
 
+    async function getDataOpinion() {
+        const { data } = await axios.get("http://localhost:4000/opinion");
+        console.log(data);
+        setOpinion(data.opinions);
+    }
+
     useEffect(() => {
-        getData();
+        getDataUser()
+        getDataOpinion()
     }, []);
 
 
     return (
         <>
-        <div className="container_feedback">
+        <div className="container_feedback" id="feedbacks">
             <img src={chef} alt="" className="imagechef"/>
 
             <div className="feedback_content">
@@ -48,9 +56,13 @@ export function Feedbacks() {
                                     <i className="fas fa-star"></i>
                                 </span>
                             </p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ea vel quia eveniet, itaque rem nobis! Quaerat asperiores deleniti
-                            </p>
+                            {dataOpinions
+                                        .filter(opinion => opinion.user_id === user.user_id)
+                                        .map(opinion => (
+                                            <p key={opinion.opinion_id}>
+                                                {opinion.text}
+                                            </p>
+                                        ))}
                         </div>
                     </div>
                         ))

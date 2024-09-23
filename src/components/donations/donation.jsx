@@ -8,14 +8,14 @@ export function Donation() {
 
     const [dataDonor, setDonor] = useState([]);
 
-    async function getData() {
+    async function getDataDonor() {
         const { data } = await axios.get("http://localhost:4000/donor");
         console.log(data);
         setDonor(data.donors);
     }
 
     useEffect(() => {
-        getData();
+        getDataDonor();
     }, []);
 
 
@@ -27,7 +27,7 @@ export function Donation() {
 
 
             <div className="container" id="donors">
-                {dataDonor.map(donor => (
+                {dataDonor.slice(0, 3).map(donor => (
                     <Card key={donor.donor_id} donor={donor}/>
                 ))}
             </div>

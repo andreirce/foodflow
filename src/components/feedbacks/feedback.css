@@ -53,6 +53,10 @@
     margin-left: 10px;
 }
 
+.feedback span i {
+    color: #e9a209;
+}
+
 @media screen and (max-width: 1170px) {
     .container_feedback {
         flex-direction: column;
