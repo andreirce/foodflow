@@ -44,3 +44,8 @@ npm install
 ```bash
 npm run dev
 ```
+
+
+# Credits
+* Design credits to Larissa Kich
+* The design was inspired by Larissa's project, but with implementations of my technologies and resources
