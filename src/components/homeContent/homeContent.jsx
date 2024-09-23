@@ -5,7 +5,7 @@ import "./homeContent.css"
 export function HomeContent(){
 
     return (
-        <section className="home">
+        <section className="home" id="home">
             <div className="background"></div>
             <div className="cta">
                 <h1 className="title">

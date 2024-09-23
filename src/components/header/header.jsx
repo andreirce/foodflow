@@ -20,7 +20,7 @@ export function Header() {
                             <a href="#home">Início</a>
                         </li>
                         <li className='nav_item'>
-                            <a href="#doadores">Doadores</a>
+                            <a href="#donors">Doadores</a>
                         </li>
                         <li className='nav_item'>
                             <a href="#feedbacks">Feedbacks</a>
