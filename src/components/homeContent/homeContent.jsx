@@ -13,7 +13,7 @@ export function HomeContent(){
                 </h1>
 
                 <p className="description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, laudantium adipisci, culpa sit, asperiores
+                Doe esperança, doe alimento. Pequenos atos podem mudar o mundo. Juntos somos mais fortes!
                 </p>
             </div>
             <div className="banner">

@@ -1,21 +1,9 @@
-// import { useEffect, useState } from "react"
+
 import "./card.css"
-// import axios from "axios"
+
 
 export function Card({donor}) {
     const baseUrl = "http://localhost:4000"
-
-    // const [dataDonor, setDonor] = useState([])
-
-    // async function getData() {
-    //     const { data } = await axios.get("http://localhost:4000/donor")
-    //     console.log(data)
-    //     setDonor(data.donors)
-    // }
-
-    // useEffect(() => {
-    //     getData()
-    // }, [])
 
     return (
         <>
