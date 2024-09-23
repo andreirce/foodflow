@@ -13,7 +13,7 @@ It's important to note that the site is still under development, which means tha
 
 This project was developed as part of Module 5 of the FullStack training at Instituto Programadores do Ajante.
 
-Link Deploy: *developing*
+Link to the api used: https://github.com/andreirce/api-foodflow
 
 
 ## Technologies used💻
