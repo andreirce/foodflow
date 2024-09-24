@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 48px;
+    margin-top: 80px;
 }
 
 .imagechef {
@@ -54,7 +55,7 @@
 }
 
 .feedback span i {
-    color: #e9a209;
+    color: #4CAF50;
 }
 
 @media screen and (max-width: 1170px) {
@@ -85,7 +86,7 @@
     }
 
     .feedback_content {
-        width: 100%;
+        width: 81%;
     }
 
     .feedback {

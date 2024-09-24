@@ -19,7 +19,7 @@
 }
 
 .cta .title span {
-    color: #e9a209;
+    color: #4CAF50;
 }
 
 .cta .description {
@@ -40,7 +40,6 @@
 }
 
 .background {
-    background-color: #ffe8b4;
     width: 50%;
     height: 100%;
     position: absolute;

@@ -1,13 +1,33 @@
 
+import { useEffect, useRef } from "react";
 import "./card.css"
+import VanillaTilt from "vanilla-tilt"
 
 
 export function Card({donor}) {
     const baseUrl = "http://localhost:4000"
+    const tiltRef = useRef(null);
+
+    useEffect(() => {
+      if (tiltRef.current) {
+        VanillaTilt.init(tiltRef.current, {
+          max: 17,
+          speed: 400,
+          glare: true,
+          "max-glare": 0.3
+        });
+      }
+  
+      return () => {
+        if (tiltRef.current?.vanillaTilt) {
+          tiltRef.current.vanillaTilt.destroy();
+        }
+      };
+    }, []);
 
     return (
         <>
-            <div className="card" key={donor.donor_id}>
+            <div className="card" key={donor.donor_id} ref={tiltRef}>
                     <div className="heart">
                         <i className="fas fa-heart"></i>
                     </div>

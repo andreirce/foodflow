@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-color: #fff9ea;
+  background-color: #eafff0;
 }
 
 .btn_default {
@@ -20,7 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffcb45;
+  background-color: #4CAF50;
   border-radius: 12px;
   padding: 10px 14px;
   font-weight: 600;
@@ -31,6 +31,6 @@ body {
 }
 
 .btn_default:hover {
-  background-color: #f8d477;
+  background-color: #208a37c4;
 
 }

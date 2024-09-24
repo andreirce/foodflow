@@ -1,5 +1,5 @@
 import "./feedback.css"
-import chef from "../../assets/chef.png"
+import chef from "../../assets/chefe.png"
 import axios from "axios"
 import { useEffect, useState } from "react";
 
@@ -11,13 +11,11 @@ export function Feedbacks() {
 
     async function getDataUser() {
         const { data } = await axios.get("http://localhost:4000/user");
-        console.log(data);
         setUser(data.users);
     }
 
     async function getDataOpinion() {
         const { data } = await axios.get("http://localhost:4000/opinion");
-        console.log(data);
         setOpinion(data.opinions);
     }
 
@@ -45,7 +43,7 @@ export function Feedbacks() {
 
                     <div className="feedback">
                         <img src={`${baseUrl}${user.image}`}alt="" className="feedback_avatar"/>
-                        <div>
+                        <div key={user.user_id}>
                             <p>
                                 {user.username} 
                                 <span>

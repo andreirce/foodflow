@@ -5,9 +5,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    
-
-
+    margin-top: 30px;
 }
 
 .container {
@@ -21,7 +19,7 @@
 }
 
 .title {
-    color: #e9a209;
+    color: #4CAF50;
     font-size: 2.5rem;
 }
 

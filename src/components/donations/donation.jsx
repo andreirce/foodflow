@@ -27,7 +27,7 @@ export function Donation() {
 
 
             <div className="container" id="donors">
-                {dataDonor.slice(0, 3).map(donor => (
+                {dataDonor.slice(0, 4).map(donor => (
                     <Card key={donor.donor_id} donor={donor}/>
                 ))}
             </div>
