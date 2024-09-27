@@ -25,23 +25,24 @@ export function Feedbacks() {
 
     return (
         <>
-        <div className="container_feedback" id="feedbacks">
-            <img src={chef} alt="" className="imagechef"/>
+            <div className="container_feedback" id="feedbacks">
+                <img src={chef} alt="" className="imagechef" />
 
-            <div className="feedback_content">
-                <h2 className="title">feedbacks</h2>
-                <h3 className="subtitle"> 
-                    O que os usuários falam sobre a iniciativa
-                </h3>
+                <div className="feedback_content">
+                    <h2 className="title">feedbacks</h2>
+                    <h3 className="subtitle">
+                        O que os usuários falam sobre a iniciativa
+                    </h3>
 
-                <div className="feedbacks">
+                    <div className="feedbacks">
 
-                    {
+                        {
                         dataUser.map(user => (
+                            
 
-                    <div className="feedback">
+                    <div className="feedback" key={user.user_id}>
                         <img src={`https://api-foodflow.onrender.com${user.image}`}alt="" className="feedback_avatar"/>
-                        <div key={user.user_id}>
+                        <div>
                             <p>
                                 {user.username} 
                                 <span>
@@ -64,12 +65,12 @@ export function Feedbacks() {
                         ))
                     }
 
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
-        
         </>
     )
 }
