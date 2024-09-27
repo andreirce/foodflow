@@ -1,7 +1,7 @@
 <img src="src/public/foodflow-img.png" width="1000" height="400">
 
 
-# Welcome to the FOODFLOW 🍔
+# Welcome to FOODFLOW 🍔
 
 ## Introduction
 
