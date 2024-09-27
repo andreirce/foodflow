@@ -5,7 +5,6 @@ import VanillaTilt from "vanilla-tilt"
 
 
 export function Card({donor}) {
-    const baseUrl = "http://localhost:4000"
     const tiltRef = useRef(null);
 
     useEffect(() => {
@@ -32,7 +31,7 @@ export function Card({donor}) {
                         <i className="fas fa-heart"></i>
                     </div>
 
-                    <img src={`${baseUrl}${donor.image}`} alt="" className="imagedonor" />
+                    <img src={`https://api-foodflow.onrender.com${donor.image}`} alt="" className="imagedonor" />
                     <h3 className="titledonor">{donor.name}</h3>
 
                     <span className="description">

@@ -9,7 +9,7 @@ export function Donation() {
     const [dataDonor, setDonor] = useState([]);
 
     async function getDataDonor() {
-        const { data } = await axios.get("http://localhost:4000/donor");
+        const { data } = await axios.get("https://api-foodflow.onrender.com/donor");
         console.log(data);
         setDonor(data.donors);
     }

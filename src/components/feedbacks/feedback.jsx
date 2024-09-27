@@ -4,18 +4,16 @@ import axios from "axios"
 import { useEffect, useState } from "react";
 
 export function Feedbacks() {
-    const baseUrl = "http://localhost:4000"
-
     const [dataUser, setUser] = useState([]);
     const [dataOpinions, setOpinion] = useState([]);
 
     async function getDataUser() {
-        const { data } = await axios.get("http://localhost:4000/user");
+        const { data } = await axios.get("https://api-foodflow.onrender.com/user");
         setUser(data.users);
     }
 
     async function getDataOpinion() {
-        const { data } = await axios.get("http://localhost:4000/opinion");
+        const { data } = await axios.get("https://api-foodflow.onrender.com/opinion");
         setOpinion(data.opinions);
     }
 
@@ -42,7 +40,7 @@ export function Feedbacks() {
                         dataUser.map(user => (
 
                     <div className="feedback">
-                        <img src={`${baseUrl}${user.image}`}alt="" className="feedback_avatar"/>
+                        <img src={`https://api-foodflow.onrender.com${user.image}`}alt="" className="feedback_avatar"/>
                         <div key={user.user_id}>
                             <p>
                                 {user.username} 
